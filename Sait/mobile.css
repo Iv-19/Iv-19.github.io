@@ -1,0 +1,128 @@
+@media (min-width:801px) {
+    header input[type="checkbox"]{
+        display:none;
+    }
+    header label {
+        display:none;
+    }
+}
+@media (max-width: 1024px) {
+    .content {
+        flex-direction:column;
+    }
+    .content .content_left {
+        order:2;
+        margin-top:5px;
+    }
+    .content_right {
+        order:1;
+    }
+    .content .content_left section h3 {
+        text-align:center;
+
+    }
+    .content .content_left .bottom {
+        display:none;
+    }
+    
+}
+@media (max-width: 930px) {
+    header .top form {
+        display:flex;
+    }
+}
+@media (max-width: 850px) {
+    .banner div p {
+        line-height:5px;
+    }
+    footer nav ul {
+        display:none;
+    }
+}
+@media (max-width: 800px) {
+    header {
+        position:relative;
+    }
+    header nav {
+        position:fixed;
+        height:100vh;
+        width:100vw;
+        left:0;
+        top:0;
+        background:purple;
+        z-index:5;
+        margin-top:-110vh;
+        transition:0.5s;
+    }
+    header nav ul{
+        flex-direction:column;
+        border-bottom:none;
+    }
+    header nav ul li {
+        border-left:none;
+        border-right:none;
+        flex-basis:30px;
+        
+    }
+    
+    header input[type="checkbox"]{
+        display:none;
+    }
+    header label {
+        position:absolute;
+        font-size:15px;
+        right:5px;
+        top:80px;
+        z-index:6;
+    }
+    header input[type="checkbox"]:checked ~ nav {
+        margin-top:0;
+        transition:0.5s;
+    }
+    header .top {
+        flex-direction:column;
+    }
+    header .top form input[type="text"] {
+        width:300px;
+    }
+    header .top form button {
+        margin-left:10px;
+    }
+}
+@media (max-width: 760px) {
+    .content_right .bottom .news_links a:last-child{
+        
+        margin-bottom:20px;
+    }
+    .content_right .bottom > a {
+        bottom:5px;
+    }
+}
+@media (max-width: 705px) {
+    header .banner {
+        display:none;
+    }
+    .content_right .bottom .news img {
+        display:none;
+        width:0;
+    }
+    .content_right .bottom .news .description h3 {
+        text-align:center;
+    }
+    .content_right .bottom .news .description p{
+        width:60vw;
+        height:70%;
+    }
+}
+@media (max-width: 705px) {
+    header .top form input[type="text"] {
+        width:170px;
+    }
+}
+@media (max-width: 685px) {
+    header label {
+       
+        top:100px;
+        
+    }
+}

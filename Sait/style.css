@@ -70,7 +70,7 @@ header .top form button {
     text-transform:uppercase;
     text-shadow: 0 2px 3px rgba(0,0,0,0.5);
 }
-banner div p:first-child{
+.banner div p:first-child{
     font-size:40px;
 }
 .banner div p:last-child {
@@ -297,7 +297,7 @@ footer ul li{
     border-right:1px solid #d1fb4a;
     padding:0 20px;
 }
-footer ul li:last-shild{
+footer ul li:last-child{
     border:none;
 }
 footer ul li a{
